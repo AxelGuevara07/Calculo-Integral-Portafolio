@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portafolio académico de Cálculo Integral">
+  <title>Longitud de un arco | Cálculo Integral</title>
+  <link rel="icon" href="../imagenes/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script>
+    window.MathJax = {
+      tex: {inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']]},
+      svg: {fontCache: 'global'}
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+
+<header class="encabezado">
+  <nav class="nav contenedor" aria-label="Navegación principal">
+    <a class="marca" href="../index.html">
+      <img class="marca-logo" src="../imagenes/logo-facultad-industrial.png" alt="Logo de la Facultad de Ingeniería Industrial">
+      <span>Cálculo Integral</span>
+    </a>
+    <button class="menu-movil" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="menu">
+      <li><a data-nav href="../index.html">Inicio</a></li>
+      <li><a data-nav href="../primer-parcial.html">Primer Parcial</a></li>
+      <li><a data-nav href="../segundo-parcial.html">Segundo Parcial</a></li>
+      
+    <li class="desplegable">
+      <button class="desplegable-boton">Temas ▾</button>
+      <div class="desplegable-menu mega-menu">
+        <div class="mega-columna">
+          <span class="mega-titulo">Primer parcial</span>
+          <a href="../temas/que-es-una-integral.html">¿Qué es una integral?</a><a href="../temas/integrales-definidas.html">Integrales definidas</a><a href="../temas/integracion-sustitucion.html">Integración por sustitución</a><a href="../temas/integracion-por-partes.html">Integración por partes</a><a href="../temas/sustitucion-trigonometrica.html">Sustitución trigonométrica</a><a href="../temas/identidades-pitagoricas.html">Sustitución trigonométrica mediante identidades pitagóricas</a>
+        </div>
+        <div class="mega-columna">
+          <span class="mega-titulo">Segundo parcial</span>
+          <a href="../temas/integracion-fracciones-parciales.html">Integración por fracciones parciales</a><a href="../temas/area-bajo-la-curva.html">Área bajo la curva</a><a href="../temas/volumen-solido-revolucion.html">Volumen de sólido de revolución</a><a href="../temas/longitud-de-un-arco.html">Longitud de un arco</a><a href="../temas/cinematica.html">Cinemática</a>
+        </div>
+      </div>
+    </li>
+    
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="pagina-cabecera">
+    <div class="contenedor">
+      <div class="migas">
+        <a href="../index.html">Inicio</a><span>›</span>
+        <a href="../segundo-parcial.html">Segundo parcial</a>
+        <span>›</span><span>Tema 10</span>
+      </div>
+      <h1>Longitud de un arco</h1>
+      <p>La longitud de un arco permite encontrar la distancia real recorrida sobre una curva. Para ello se utiliza una fórmula basada en la derivada de la función y en una integral definida.</p>
+    </div>
+  </section>
+
+  <section class="contenido-tema">
+    <div class="contenedor layout-tema">
+      <article class="articulo reveal">
+        
+<h2>Fórmula para \(y=f(x)\)</h2>
+<div class="formula">\[L=\int_a^b \sqrt{1+\left(\frac{dy}{dx}\right)^2}\,dx\]</div>
+
+<h2>Significado</h2>
+<p>La expresión dentro de la raíz combina el cambio horizontal y vertical de la curva, permitiendo calcular su longitud con precisión.</p>
+
+<h2>Pasos</h2>
+<ol class="pasos">
+<li>Derivar la función.</li>
+<li>Elevar la derivada al cuadrado.</li>
+<li>Sustituir en la fórmula de longitud.</li>
+<li>Resolver la integral definida.</li>
+</ol>
+
+<h2>Ejemplo resuelto</h2>
+<div class="ejemplo">
+<strong>Para:</strong> \(y=\frac{x^2}{2}\) en \([0,1]\)
+<p>Entonces \(\frac{dy}{dx}=x\).</p>
+<div class="formula">\[L=\int_0^1 \sqrt{1+x^2}\,dx\]</div>
+<p>Esta integral puede resolverse con sustitución trigonométrica o dejarse indicada si el ejercicio se centra en el planteamiento.</p>
+</div>
+
+        
+<section class="video-box reveal">
+  <h2>Material adicional</h2>
+  <div class="video-grid">
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/SOjorsZUwX4" title="Longitud de curva - Ej. 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="video-detalles">
+      <span class="video-meta">▶ Video recomendado</span>
+      <h3>Longitud de curva - Ej. 3</h3>
+      <p>Como refuerzo, puedes mirar este video para observar otro ejemplo explicado paso a paso y complementar lo visto en el tema.</p>
+      <a class="boton boton-primario" href="https://www.youtube.com/watch?v=SOjorsZUwX4" target="_blank" rel="noopener">Ver en YouTube</a>
+    </div>
+  </div>
+</section>
+
+        <div class="navegacion-temas"><a href="volumen-solido-revolucion.html">← Volumen de sólido de revolución</a><a href="cinematica.html">Cinemática →</a></div>
+      </article>
+      <aside class="lateral">
+        <div class="caja-lateral reveal">
+          <h3>Temas del segundo parcial</h3>
+          <a class="" href="integracion-fracciones-parciales.html">Integración por fracciones parciales</a>
+<a class="" href="area-bajo-la-curva.html">Área bajo la curva</a>
+<a class="" href="volumen-solido-revolucion.html">Volumen de sólido de revolución</a>
+<a class="actual" href="longitud-de-un-arco.html">Longitud de un arco</a>
+<a class="" href="cinematica.html">Cinemática</a>
+        </div>
+        <div class="caja-lateral reveal">
+          <h3>Consejo de estudio</h3>
+          <p>Lee primero el concepto, revisa la fórmula y luego intenta resolver el ejemplo por tu cuenta.</p>
+          <p>Después, usa el video como repaso o complemento.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie-grid">
+    <a class="marca" href="../index.html">
+      <img class="marca-logo" src="../imagenes/logo-facultad-industrial.png" alt="Logo de la Facultad de Ingeniería Industrial">
+      <span style="color:white">Cálculo Integral</span>
+    </a>
+    <small>Proyecto académico · Universidad de Guayaquil · Facultad de Ingeniería Industrial</small>
+  </div>
+</footer>
+<script src="../js/script.js"></script>

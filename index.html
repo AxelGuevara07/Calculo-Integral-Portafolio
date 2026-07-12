@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portafolio académico de Cálculo Integral">
+  <title>Inicio | Cálculo Integral</title>
+  <link rel="icon" href="imagenes/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script>
+    window.MathJax = {
+      tex: {inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']]},
+      svg: {fontCache: 'global'}
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+
+<header class="encabezado">
+  <nav class="nav contenedor" aria-label="Navegación principal">
+    <a class="marca" href="index.html">
+      <img class="marca-logo" src="imagenes/logo-facultad-industrial.png" alt="Logo de la Facultad de Ingeniería Industrial">
+      <span>Cálculo Integral</span>
+    </a>
+    <button class="menu-movil" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="menu">
+      <li><a data-nav href="index.html">Inicio</a></li>
+      <li><a data-nav href="primer-parcial.html">Primer Parcial</a></li>
+      <li><a data-nav href="segundo-parcial.html">Segundo Parcial</a></li>
+      
+    <li class="desplegable">
+      <button class="desplegable-boton">Temas ▾</button>
+      <div class="desplegable-menu mega-menu">
+        <div class="mega-columna">
+          <span class="mega-titulo">Primer parcial</span>
+          <a href="temas/que-es-una-integral.html">¿Qué es una integral?</a><a href="temas/integrales-definidas.html">Integrales definidas</a><a href="temas/integracion-sustitucion.html">Integración por sustitución</a><a href="temas/integracion-por-partes.html">Integración por partes</a><a href="temas/sustitucion-trigonometrica.html">Sustitución trigonométrica</a><a href="temas/identidades-pitagoricas.html">Sustitución trigonométrica mediante identidades pitagóricas</a>
+        </div>
+        <div class="mega-columna">
+          <span class="mega-titulo">Segundo parcial</span>
+          <a href="temas/integracion-fracciones-parciales.html">Integración por fracciones parciales</a><a href="temas/area-bajo-la-curva.html">Área bajo la curva</a><a href="temas/volumen-solido-revolucion.html">Volumen de sólido de revolución</a><a href="temas/longitud-de-un-arco.html">Longitud de un arco</a><a href="temas/cinematica.html">Cinemática</a>
+        </div>
+      </div>
+    </li>
+    
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="contenedor hero-grid">
+      <div class="hero-texto">
+        <span class="etiqueta">✦ Proyecto final de la asignatura</span>
+        <h1>Aprende <span>Cálculo Integral</span> de forma clara y visual</h1>
+        <p>Explora los temas del curso, fórmulas esenciales, métodos de integración y aplicaciones explicadas paso a paso, organizadas por parcial.</p>
+        <div class="acciones">
+          <a class="boton boton-primario" href="#temas">▤ Ver todos los temas</a>
+          <a class="boton boton-secundario" href="primer-parcial.html">∫ Explorar parciales</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="imagenes/hero-matematicas.jpg" alt="Estudiante trabajando con fórmulas de cálculo integral">
+        <span class="formula-flotante f1">∫ f(x) dx</span>
+        <span class="formula-flotante f2">F′(x) = f(x)</span>
+        <span class="formula-flotante f3">∫u dv = uv − ∫v du</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion-blanca" id="temas">
+    <div class="contenedor">
+      <div class="encabezado-seccion reveal">
+        <span class="sobrelinea">Portafolio completo</span>
+        <h2>Temas de Cálculo Integral</h2>
+        <p>El contenido está dividido en dos parciales. Cada tema tiene explicación, fórmulas, ejemplo y un video adicional para reforzar el aprendizaje.</p>
+      </div>
+      <div class="tarjetas"><article class="tarjeta reveal">
+      <span class="numero">01</span>
+      <span class="etiqueta-tarjeta">Primer parcial</span>
+      <h3>¿Qué es una integral?</h3>
+      <p>Introducción al concepto de integral como antiderivada y acumulación.</p>
+      <a class="enlace-tarjeta" href="temas/que-es-una-integral.html">Ver tema <span>→</span></a>
+    </article>
+<article class="tarjeta reveal">
+      <span class="numero">02</span>
+      <span class="etiqueta-tarjeta">Primer parcial</span>
+      <h3>Integrales definidas</h3>
+      <p>Cálculo de acumulación y área con límites de integración.</p>
+      <a class="enlace-tarjeta" href="temas/integrales-definidas.html">Ver tema <span>→</span></a>
+    </article>
+<article class="tarjeta reveal">
+      <span class="numero">03</span>
+      <span class="etiqueta-tarjeta">Primer parcial</span>
+      <h3>Integración por sustitución</h3>
+      <p>Cambio de variable para simplificar integrales compuestas.</p>
+      <a class="enlace-tarjeta" href="temas/integracion-sustitucion.html">Ver tema <span>→</span></a>
+    </article>
+<article class="tarjeta reveal">
+      <span class="numero">04</span>
+      <span class="etiqueta-tarjeta">Primer parcial</span>
+      <h3>Integración por partes</h3>
+      <p>Método ideal para integrar productos de funciones.</p>
+      <a class="enlace-tarjeta" href="temas/integracion-por-partes.html">Ver tema <span>→</span></a>
+    </article>
+<article class="tarjeta reveal">
+      <span class="numero">05</span>
+      <span class="etiqueta-tarjeta">Primer parcial</span>
+      <h3>Sustitución trigonométrica</h3>
+      <p>Uso de funciones trigonométricas para simplificar raíces cuadráticas.</p>
+      <a class="enlace-tarjeta" href="temas/sustitucion-trigonometrica.html">Ver tema <span>→</span></a>
+    </article>
+<article class="tarjeta reveal">
+      <span class="numero">06</span>
+      <span class="etiqueta-tarjeta">Primer parcial</span>
+      <h3>Sustitución trigonométrica mediante identidades pitagóricas</h3>
+      <p>Aplicación de identidades pitagóricas y triángulos de referencia.</p>
+      <a class="enlace-tarjeta" href="temas/identidades-pitagoricas.html">Ver tema <span>→</span></a>
+    </article>
+<article class="tarjeta reveal">
+      <span class="numero">07</span>
+      <span class="etiqueta-tarjeta">Segundo parcial</span>
+      <h3>Integración por fracciones parciales</h3>
+      <p>Descomposición de funciones racionales en fracciones más simples.</p>
+      <a class="enlace-tarjeta" href="temas/integracion-fracciones-parciales.html">Ver tema <span>→</span></a>
+    </article>
+<article class="tarjeta reveal">
+      <span class="numero">08</span>
+      <span class="etiqueta-tarjeta">Segundo parcial</span>
+      <h3>Área bajo la curva</h3>
+      <p>Aplicación de la integral definida para hallar áreas de regiones planas.</p>
+      <a class="enlace-tarjeta" href="temas/area-bajo-la-curva.html">Ver tema <span>→</span></a>
+    </article>
+<article class="tarjeta reveal">
+      <span class="numero">09</span>
+      <span class="etiqueta-tarjeta">Segundo parcial</span>
+      <h3>Volumen de sólido de revolución</h3>
+      <p>Uso de integrales para generar y medir cuerpos al girar una región.</p>
+      <a class="enlace-tarjeta" href="temas/volumen-solido-revolucion.html">Ver tema <span>→</span></a>
+    </article>
+<article class="tarjeta reveal">
+      <span class="numero">10</span>
+      <span class="etiqueta-tarjeta">Segundo parcial</span>
+      <h3>Longitud de un arco</h3>
+      <p>Cálculo de la distancia recorrida sobre una curva.</p>
+      <a class="enlace-tarjeta" href="temas/longitud-de-un-arco.html">Ver tema <span>→</span></a>
+    </article>
+<article class="tarjeta reveal">
+      <span class="numero">11</span>
+      <span class="etiqueta-tarjeta">Segundo parcial</span>
+      <h3>Cinemática</h3>
+      <p>Aplicación de integrales para relacionar posición, velocidad y aceleración.</p>
+      <a class="enlace-tarjeta" href="temas/cinematica.html">Ver tema <span>→</span></a>
+    </article></div>
+    </div>
+  </section>
+
+  <section class="banda">
+    <div class="contenedor banda-grid">
+      <div class="reveal">
+        <h2>Primer y segundo parcial</h2>
+        <p>Navega por cada tema de manera independiente y estudia con un diseño más dinámico y agradable.</p>
+      </div>
+      <div class="acciones reveal">
+        <a class="boton boton-primario" href="primer-parcial.html">Ver primer parcial</a>
+        <a class="boton boton-secundario" href="segundo-parcial.html">Ver segundo parcial</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie-grid">
+    <a class="marca" href="index.html">
+      <img class="marca-logo" src="imagenes/logo-facultad-industrial.png" alt="Logo de la Facultad de Ingeniería Industrial">
+      <span style="color:white">Cálculo Integral</span>
+    </a>
+    <small>Proyecto académico · Universidad de Guayaquil · Facultad de Ingeniería Industrial</small>
+  </div>
+</footer>
+<script src="js/script.js"></script>

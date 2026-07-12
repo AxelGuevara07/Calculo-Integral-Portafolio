@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portafolio académico de Cálculo Integral">
+  <title>Integrales definidas | Cálculo Integral</title>
+  <link rel="icon" href="../imagenes/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script>
+    window.MathJax = {
+      tex: {inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']]},
+      svg: {fontCache: 'global'}
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+
+<header class="encabezado">
+  <nav class="nav contenedor" aria-label="Navegación principal">
+    <a class="marca" href="../index.html">
+      <img class="marca-logo" src="../imagenes/logo-facultad-industrial.png" alt="Logo de la Facultad de Ingeniería Industrial">
+      <span>Cálculo Integral</span>
+    </a>
+    <button class="menu-movil" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="menu">
+      <li><a data-nav href="../index.html">Inicio</a></li>
+      <li><a data-nav href="../primer-parcial.html">Primer Parcial</a></li>
+      <li><a data-nav href="../segundo-parcial.html">Segundo Parcial</a></li>
+      
+    <li class="desplegable">
+      <button class="desplegable-boton">Temas ▾</button>
+      <div class="desplegable-menu mega-menu">
+        <div class="mega-columna">
+          <span class="mega-titulo">Primer parcial</span>
+          <a href="../temas/que-es-una-integral.html">¿Qué es una integral?</a><a href="../temas/integrales-definidas.html">Integrales definidas</a><a href="../temas/integracion-sustitucion.html">Integración por sustitución</a><a href="../temas/integracion-por-partes.html">Integración por partes</a><a href="../temas/sustitucion-trigonometrica.html">Sustitución trigonométrica</a><a href="../temas/identidades-pitagoricas.html">Sustitución trigonométrica mediante identidades pitagóricas</a>
+        </div>
+        <div class="mega-columna">
+          <span class="mega-titulo">Segundo parcial</span>
+          <a href="../temas/integracion-fracciones-parciales.html">Integración por fracciones parciales</a><a href="../temas/area-bajo-la-curva.html">Área bajo la curva</a><a href="../temas/volumen-solido-revolucion.html">Volumen de sólido de revolución</a><a href="../temas/longitud-de-un-arco.html">Longitud de un arco</a><a href="../temas/cinematica.html">Cinemática</a>
+        </div>
+      </div>
+    </li>
+    
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="pagina-cabecera">
+    <div class="contenedor">
+      <div class="migas">
+        <a href="../index.html">Inicio</a><span>›</span>
+        <a href="../primer-parcial.html">Primer parcial</a>
+        <span>›</span><span>Tema 2</span>
+      </div>
+      <h1>Integrales definidas</h1>
+      <p>La integral definida se usa para calcular el valor acumulado de una función entre dos límites. Su resultado es un número y está estrechamente relacionado con el área bajo la curva.</p>
+    </div>
+  </section>
+
+  <section class="contenido-tema">
+    <div class="contenedor layout-tema">
+      <article class="articulo reveal">
+        
+<h2>Notación</h2>
+<div class="formula">\[\int_a^b f(x)\,dx\]</div>
+<p>Aquí, \(a\) es el límite inferior y \(b\) el límite superior. La expresión indica que la función \(f(x)\) se integra en ese intervalo.</p>
+
+<h2>Teorema fundamental del cálculo</h2>
+<p>Si \(F(x)\) es una antiderivada de \(f(x)\), entonces:</p>
+<div class="formula">\[\int_a^b f(x)\,dx = F(b)-F(a)\]</div>
+
+<h2>Procedimiento</h2>
+<ol class="pasos">
+<li>Encontrar una antiderivada de la función.</li>
+<li>Evaluar esa antiderivada en el límite superior.</li>
+<li>Evaluarla en el límite inferior.</li>
+<li>Restar los resultados.</li>
+</ol>
+
+<h2>Ejemplo resuelto</h2>
+<div class="ejemplo">
+<strong>Calcular:</strong> \(\int_0^2 3x^2\,dx\)
+<div class="formula">\[\int 3x^2\,dx = x^3\]</div>
+<div class="formula">\[\left[x^3\right]_0^2 = 2^3-0^3 = 8\]</div>
+<p>El valor de la integral definida es <strong>8</strong>.</p>
+</div>
+
+<h2>Observación importante</h2>
+<p>Si parte de la curva está bajo el eje \(x\), esa región cuenta con signo negativo. Por eso el resultado de la integral definida no siempre coincide con el área geométrica total.</p>
+
+        
+<section class="video-box reveal">
+  <h2>Material adicional</h2>
+  <div class="video-grid">
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/x1NFj6Wc-jY" title="Integrales definidas | Ej. 4 #julioprofe" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="video-detalles">
+      <span class="video-meta">▶ Video recomendado</span>
+      <h3>Integrales definidas | Ej. 4 #julioprofe</h3>
+      <p>Como refuerzo, puedes mirar este video para observar otro ejemplo explicado paso a paso y complementar lo visto en el tema.</p>
+      <a class="boton boton-primario" href="https://www.youtube.com/watch?v=x1NFj6Wc-jY" target="_blank" rel="noopener">Ver en YouTube</a>
+    </div>
+  </div>
+</section>
+
+        <div class="navegacion-temas"><a href="que-es-una-integral.html">← ¿Qué es una integral?</a><a href="integracion-sustitucion.html">Integración por sustitución →</a></div>
+      </article>
+      <aside class="lateral">
+        <div class="caja-lateral reveal">
+          <h3>Temas del primer parcial</h3>
+          <a class="" href="que-es-una-integral.html">¿Qué es una integral?</a>
+<a class="actual" href="integrales-definidas.html">Integrales definidas</a>
+<a class="" href="integracion-sustitucion.html">Integración por sustitución</a>
+<a class="" href="integracion-por-partes.html">Integración por partes</a>
+<a class="" href="sustitucion-trigonometrica.html">Sustitución trigonométrica</a>
+<a class="" href="identidades-pitagoricas.html">Sustitución trigonométrica mediante identidades pitagóricas</a>
+        </div>
+        <div class="caja-lateral reveal">
+          <h3>Consejo de estudio</h3>
+          <p>Lee primero el concepto, revisa la fórmula y luego intenta resolver el ejemplo por tu cuenta.</p>
+          <p>Después, usa el video como repaso o complemento.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie-grid">
+    <a class="marca" href="../index.html">
+      <img class="marca-logo" src="../imagenes/logo-facultad-industrial.png" alt="Logo de la Facultad de Ingeniería Industrial">
+      <span style="color:white">Cálculo Integral</span>
+    </a>
+    <small>Proyecto académico · Universidad de Guayaquil · Facultad de Ingeniería Industrial</small>
+  </div>
+</footer>
+<script src="../js/script.js"></script>

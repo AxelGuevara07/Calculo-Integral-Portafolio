@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portafolio académico de Cálculo Integral">
+  <title>Integración por fracciones parciales | Cálculo Integral</title>
+  <link rel="icon" href="../imagenes/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script>
+    window.MathJax = {
+      tex: {inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']]},
+      svg: {fontCache: 'global'}
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+
+<header class="encabezado">
+  <nav class="nav contenedor" aria-label="Navegación principal">
+    <a class="marca" href="../index.html">
+      <img class="marca-logo" src="../imagenes/logo-facultad-industrial.png" alt="Logo de la Facultad de Ingeniería Industrial">
+      <span>Cálculo Integral</span>
+    </a>
+    <button class="menu-movil" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="menu">
+      <li><a data-nav href="../index.html">Inicio</a></li>
+      <li><a data-nav href="../primer-parcial.html">Primer Parcial</a></li>
+      <li><a data-nav href="../segundo-parcial.html">Segundo Parcial</a></li>
+      
+    <li class="desplegable">
+      <button class="desplegable-boton">Temas ▾</button>
+      <div class="desplegable-menu mega-menu">
+        <div class="mega-columna">
+          <span class="mega-titulo">Primer parcial</span>
+          <a href="../temas/que-es-una-integral.html">¿Qué es una integral?</a><a href="../temas/integrales-definidas.html">Integrales definidas</a><a href="../temas/integracion-sustitucion.html">Integración por sustitución</a><a href="../temas/integracion-por-partes.html">Integración por partes</a><a href="../temas/sustitucion-trigonometrica.html">Sustitución trigonométrica</a><a href="../temas/identidades-pitagoricas.html">Sustitución trigonométrica mediante identidades pitagóricas</a>
+        </div>
+        <div class="mega-columna">
+          <span class="mega-titulo">Segundo parcial</span>
+          <a href="../temas/integracion-fracciones-parciales.html">Integración por fracciones parciales</a><a href="../temas/area-bajo-la-curva.html">Área bajo la curva</a><a href="../temas/volumen-solido-revolucion.html">Volumen de sólido de revolución</a><a href="../temas/longitud-de-un-arco.html">Longitud de un arco</a><a href="../temas/cinematica.html">Cinemática</a>
+        </div>
+      </div>
+    </li>
+    
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="pagina-cabecera">
+    <div class="contenedor">
+      <div class="migas">
+        <a href="../index.html">Inicio</a><span>›</span>
+        <a href="../segundo-parcial.html">Segundo parcial</a>
+        <span>›</span><span>Tema 7</span>
+      </div>
+      <h1>Integración por fracciones parciales</h1>
+      <p>La integración por fracciones parciales se aplica a funciones racionales, es decir, cocientes de polinomios. El método consiste en descomponer la fracción original en otras más simples que puedan integrarse directamente.</p>
+    </div>
+  </section>
+
+  <section class="contenido-tema">
+    <div class="contenedor layout-tema">
+      <article class="articulo reveal">
+        
+<h2>Condición inicial</h2>
+<p>Antes de aplicar el método, el grado del numerador debe ser menor que el del denominador. Si no se cumple, primero se realiza división de polinomios.</p>
+
+<h2>Idea del método</h2>
+<p>Si el denominador puede factorizarse, la fracción se descompone en una suma de fracciones simples con constantes desconocidas.</p>
+
+<h2>Forma general sencilla</h2>
+<div class="formula">\[\frac{P(x)}{(x-a)(x-b)} = \frac{A}{x-a} + \frac{B}{x-b}\]</div>
+
+<h2>Pasos</h2>
+<ol class="pasos">
+<li>Verificar que la fracción sea propia.</li>
+<li>Factorizar el denominador.</li>
+<li>Plantear la descomposición en fracciones parciales.</li>
+<li>Encontrar las constantes.</li>
+<li>Integrar cada fracción por separado.</li>
+</ol>
+
+<h2>Ejemplo resuelto</h2>
+<div class="ejemplo">
+<strong>Resolver:</strong> \(\int \frac{1}{x^2-1}\,dx\)
+<p>Factorizamos: \(x^2-1=(x-1)(x+1)\).</p>
+<div class="formula">\[\frac{1}{x^2-1}=\frac{A}{x-1}+\frac{B}{x+1}\]</div>
+<p>Resolviendo, se obtiene \(A=\frac12\) y \(B=-\frac12\).</p>
+<div class="formula">\[\int \frac{1}{x^2-1}\,dx=\frac12\int\frac{1}{x-1}dx-\frac12\int\frac{1}{x+1}dx\]</div>
+<div class="formula">\[\boxed{\frac12\ln|x-1|-\frac12\ln|x+1|+C}\]</div>
+</div>
+
+        
+<section class="video-box reveal">
+  <h2>Material adicional</h2>
+  <div class="video-grid">
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/7cf6tXdoF_8" title="Integral por fracciones parciales" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="video-detalles">
+      <span class="video-meta">▶ Video recomendado</span>
+      <h3>Integral por fracciones parciales</h3>
+      <p>Como refuerzo, puedes mirar este video para observar otro ejemplo explicado paso a paso y complementar lo visto en el tema.</p>
+      <a class="boton boton-primario" href="https://www.youtube.com/watch?v=7cf6tXdoF_8" target="_blank" rel="noopener">Ver en YouTube</a>
+    </div>
+  </div>
+</section>
+
+        <div class="navegacion-temas"><a href="../segundo-parcial.html">← Ver temas del parcial</a><a href="area-bajo-la-curva.html">Área bajo la curva →</a></div>
+      </article>
+      <aside class="lateral">
+        <div class="caja-lateral reveal">
+          <h3>Temas del segundo parcial</h3>
+          <a class="actual" href="integracion-fracciones-parciales.html">Integración por fracciones parciales</a>
+<a class="" href="area-bajo-la-curva.html">Área bajo la curva</a>
+<a class="" href="volumen-solido-revolucion.html">Volumen de sólido de revolución</a>
+<a class="" href="longitud-de-un-arco.html">Longitud de un arco</a>
+<a class="" href="cinematica.html">Cinemática</a>
+        </div>
+        <div class="caja-lateral reveal">
+          <h3>Consejo de estudio</h3>
+          <p>Lee primero el concepto, revisa la fórmula y luego intenta resolver el ejemplo por tu cuenta.</p>
+          <p>Después, usa el video como repaso o complemento.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie-grid">
+    <a class="marca" href="../index.html">
+      <img class="marca-logo" src="../imagenes/logo-facultad-industrial.png" alt="Logo de la Facultad de Ingeniería Industrial">
+      <span style="color:white">Cálculo Integral</span>
+    </a>
+    <small>Proyecto académico · Universidad de Guayaquil · Facultad de Ingeniería Industrial</small>
+  </div>
+</footer>
+<script src="../js/script.js"></script>

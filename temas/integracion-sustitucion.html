@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portafolio académico de Cálculo Integral">
+  <title>Integración por sustitución | Cálculo Integral</title>
+  <link rel="icon" href="../imagenes/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script>
+    window.MathJax = {
+      tex: {inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']]},
+      svg: {fontCache: 'global'}
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+
+<header class="encabezado">
+  <nav class="nav contenedor" aria-label="Navegación principal">
+    <a class="marca" href="../index.html">
+      <img class="marca-logo" src="../imagenes/logo-facultad-industrial.png" alt="Logo de la Facultad de Ingeniería Industrial">
+      <span>Cálculo Integral</span>
+    </a>
+    <button class="menu-movil" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="menu">
+      <li><a data-nav href="../index.html">Inicio</a></li>
+      <li><a data-nav href="../primer-parcial.html">Primer Parcial</a></li>
+      <li><a data-nav href="../segundo-parcial.html">Segundo Parcial</a></li>
+      
+    <li class="desplegable">
+      <button class="desplegable-boton">Temas ▾</button>
+      <div class="desplegable-menu mega-menu">
+        <div class="mega-columna">
+          <span class="mega-titulo">Primer parcial</span>
+          <a href="../temas/que-es-una-integral.html">¿Qué es una integral?</a><a href="../temas/integrales-definidas.html">Integrales definidas</a><a href="../temas/integracion-sustitucion.html">Integración por sustitución</a><a href="../temas/integracion-por-partes.html">Integración por partes</a><a href="../temas/sustitucion-trigonometrica.html">Sustitución trigonométrica</a><a href="../temas/identidades-pitagoricas.html">Sustitución trigonométrica mediante identidades pitagóricas</a>
+        </div>
+        <div class="mega-columna">
+          <span class="mega-titulo">Segundo parcial</span>
+          <a href="../temas/integracion-fracciones-parciales.html">Integración por fracciones parciales</a><a href="../temas/area-bajo-la-curva.html">Área bajo la curva</a><a href="../temas/volumen-solido-revolucion.html">Volumen de sólido de revolución</a><a href="../temas/longitud-de-un-arco.html">Longitud de un arco</a><a href="../temas/cinematica.html">Cinemática</a>
+        </div>
+      </div>
+    </li>
+    
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="pagina-cabecera">
+    <div class="contenedor">
+      <div class="migas">
+        <a href="../index.html">Inicio</a><span>›</span>
+        <a href="../primer-parcial.html">Primer parcial</a>
+        <span>›</span><span>Tema 3</span>
+      </div>
+      <h1>Integración por sustitución</h1>
+      <p>La integración por sustitución, también llamada cambio de variable, se utiliza cuando una integral contiene una función compuesta. La idea es reemplazar una parte de la expresión por una nueva variable para obtener una integral más sencilla.</p>
+    </div>
+  </section>
+
+  <section class="contenido-tema">
+    <div class="contenedor layout-tema">
+      <article class="articulo reveal">
+        
+<h2>Fórmula general</h2>
+<div class="formula">\[u=g(x), \qquad du=g'(x)\,dx\]</div>
+<div class="formula">\[\int f(g(x))g'(x)\,dx = \int f(u)\,du\]</div>
+
+<h2>Cuándo conviene usarla</h2>
+<p>Es útil cuando aparece una expresión dentro de una raíz, potencia, logaritmo, seno, coseno, exponencial u otra función compuesta, y además aparece su derivada o algo proporcional a ella.</p>
+
+<h2>Pasos</h2>
+<ol class="pasos">
+<li>Elegir la expresión que será reemplazada por \(u\).</li>
+<li>Derivar esa expresión para hallar \(du\).</li>
+<li>Reescribir toda la integral en términos de \(u\).</li>
+<li>Integrar y volver a la variable original.</li>
+</ol>
+
+<h2>Ejemplo resuelto</h2>
+<div class="ejemplo">
+<strong>Resolver:</strong> \(\int 2x\cos(x^2)\,dx\)
+<p>Tomamos \(u=x^2\), entonces \(du=2x\,dx\).</p>
+<div class="formula">\[\int \cos(u)\,du = \sin(u)+C\]</div>
+<div class="formula">\[\boxed{\sin(x^2)+C}\]</div>
+</div>
+
+<h2>Consejo</h2>
+<p>Una buena sustitución suele ser la parte “interna” de la función, es decir, la que se repite dentro de otra operación.</p>
+
+        
+<section class="video-box reveal">
+  <h2>Material adicional</h2>
+  <div class="video-grid">
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/evQWBkUIzV0" title="Integrales por sustitución | Ej. 7 #julioprofe" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="video-detalles">
+      <span class="video-meta">▶ Video recomendado</span>
+      <h3>Integrales por sustitución | Ej. 7 #julioprofe</h3>
+      <p>Como refuerzo, puedes mirar este video para observar otro ejemplo explicado paso a paso y complementar lo visto en el tema.</p>
+      <a class="boton boton-primario" href="https://www.youtube.com/watch?v=evQWBkUIzV0" target="_blank" rel="noopener">Ver en YouTube</a>
+    </div>
+  </div>
+</section>
+
+        <div class="navegacion-temas"><a href="integrales-definidas.html">← Integrales definidas</a><a href="integracion-por-partes.html">Integración por partes →</a></div>
+      </article>
+      <aside class="lateral">
+        <div class="caja-lateral reveal">
+          <h3>Temas del primer parcial</h3>
+          <a class="" href="que-es-una-integral.html">¿Qué es una integral?</a>
+<a class="" href="integrales-definidas.html">Integrales definidas</a>
+<a class="actual" href="integracion-sustitucion.html">Integración por sustitución</a>
+<a class="" href="integracion-por-partes.html">Integración por partes</a>
+<a class="" href="sustitucion-trigonometrica.html">Sustitución trigonométrica</a>
+<a class="" href="identidades-pitagoricas.html">Sustitución trigonométrica mediante identidades pitagóricas</a>
+        </div>
+        <div class="caja-lateral reveal">
+          <h3>Consejo de estudio</h3>
+          <p>Lee primero el concepto, revisa la fórmula y luego intenta resolver el ejemplo por tu cuenta.</p>
+          <p>Después, usa el video como repaso o complemento.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie-grid">
+    <a class="marca" href="../index.html">
+      <img class="marca-logo" src="../imagenes/logo-facultad-industrial.png" alt="Logo de la Facultad de Ingeniería Industrial">
+      <span style="color:white">Cálculo Integral</span>
+    </a>
+    <small>Proyecto académico · Universidad de Guayaquil · Facultad de Ingeniería Industrial</small>
+  </div>
+</footer>
+<script src="../js/script.js"></script>

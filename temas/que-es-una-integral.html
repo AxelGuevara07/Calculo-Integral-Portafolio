@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portafolio académico de Cálculo Integral">
+  <title>¿Qué es una integral? | Cálculo Integral</title>
+  <link rel="icon" href="../imagenes/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script>
+    window.MathJax = {
+      tex: {inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']]},
+      svg: {fontCache: 'global'}
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+
+<header class="encabezado">
+  <nav class="nav contenedor" aria-label="Navegación principal">
+    <a class="marca" href="../index.html">
+      <img class="marca-logo" src="../imagenes/logo-facultad-industrial.png" alt="Logo de la Facultad de Ingeniería Industrial">
+      <span>Cálculo Integral</span>
+    </a>
+    <button class="menu-movil" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="menu">
+      <li><a data-nav href="../index.html">Inicio</a></li>
+      <li><a data-nav href="../primer-parcial.html">Primer Parcial</a></li>
+      <li><a data-nav href="../segundo-parcial.html">Segundo Parcial</a></li>
+      
+    <li class="desplegable">
+      <button class="desplegable-boton">Temas ▾</button>
+      <div class="desplegable-menu mega-menu">
+        <div class="mega-columna">
+          <span class="mega-titulo">Primer parcial</span>
+          <a href="../temas/que-es-una-integral.html">¿Qué es una integral?</a><a href="../temas/integrales-definidas.html">Integrales definidas</a><a href="../temas/integracion-sustitucion.html">Integración por sustitución</a><a href="../temas/integracion-por-partes.html">Integración por partes</a><a href="../temas/sustitucion-trigonometrica.html">Sustitución trigonométrica</a><a href="../temas/identidades-pitagoricas.html">Sustitución trigonométrica mediante identidades pitagóricas</a>
+        </div>
+        <div class="mega-columna">
+          <span class="mega-titulo">Segundo parcial</span>
+          <a href="../temas/integracion-fracciones-parciales.html">Integración por fracciones parciales</a><a href="../temas/area-bajo-la-curva.html">Área bajo la curva</a><a href="../temas/volumen-solido-revolucion.html">Volumen de sólido de revolución</a><a href="../temas/longitud-de-un-arco.html">Longitud de un arco</a><a href="../temas/cinematica.html">Cinemática</a>
+        </div>
+      </div>
+    </li>
+    
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="pagina-cabecera">
+    <div class="contenedor">
+      <div class="migas">
+        <a href="../index.html">Inicio</a><span>›</span>
+        <a href="../primer-parcial.html">Primer parcial</a>
+        <span>›</span><span>Tema 1</span>
+      </div>
+      <h1>¿Qué es una integral?</h1>
+      <p>La integral es una herramienta del cálculo que permite sumar cantidades muy pequeñas para obtener una cantidad total. También puede interpretarse como el proceso inverso de derivar, por lo que sirve para encontrar antiderivadas y para modelar acumulaciones.</p>
+    </div>
+  </section>
+
+  <section class="contenido-tema">
+    <div class="contenedor layout-tema">
+      <article class="articulo reveal">
+        
+<h2>Concepto general</h2>
+<p>Cuando derivamos una función obtenemos su razón de cambio. Cuando integramos, hacemos el proceso contrario: buscamos una función cuya derivada sea la función dada. Por eso se dice que la integración es la operación inversa de la derivación.</p>
+<div class="formula">\[\int f(x)\,dx = F(x)+C\qquad\text{si}\qquad F'(x)=f(x)\]</div>
+
+<h2>Interpretación como acumulación</h2>
+<p>La integral también puede entenderse como una suma continua. En lugar de sumar valores separados, suma infinitas cantidades muy pequeñas. Gracias a eso se usa para calcular áreas, distancias, volúmenes, trabajo, crecimiento acumulado y muchas otras aplicaciones.</p>
+
+<h2>Tipos de integrales</h2>
+<ul>
+<li><strong>Integral indefinida:</strong> produce una familia de funciones y siempre incluye la constante <strong>C</strong>.</li>
+<li><strong>Integral definida:</strong> tiene límites de integración y entrega un valor numérico.</li>
+</ul>
+
+<h2>Ejemplo sencillo</h2>
+<div class="ejemplo">
+<strong>Resolver:</strong> \(\int 2x\,dx\)
+<div class="formula">\[\int 2x\,dx = x^2 + C\]</div>
+<p>Se verifica porque \(\frac{d}{dx}(x^2+C)=2x\).</p>
+</div>
+
+<h2>Ideas clave</h2>
+<ul>
+<li>Integrar es buscar antiderivadas.</li>
+<li>La constante de integración aparece en las integrales indefinidas.</li>
+<li>La integral definida representa acumulación en un intervalo.</li>
+</ul>
+
+        
+<section class="video-box reveal">
+  <h2>Material adicional</h2>
+  <div class="video-grid">
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/H3G08Aj0sLE" title="Cálculo Integral - Tutorial de Integración Básica" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="video-detalles">
+      <span class="video-meta">▶ Video recomendado</span>
+      <h3>Cálculo Integral - Tutorial de Integración Básica</h3>
+      <p>Como refuerzo, puedes mirar este video para observar otro ejemplo explicado paso a paso y complementar lo visto en el tema.</p>
+      <a class="boton boton-primario" href="https://www.youtube.com/watch?v=H3G08Aj0sLE" target="_blank" rel="noopener">Ver en YouTube</a>
+    </div>
+  </div>
+</section>
+
+        <div class="navegacion-temas"><a href="../primer-parcial.html">← Ver temas del parcial</a><a href="integrales-definidas.html">Integrales definidas →</a></div>
+      </article>
+      <aside class="lateral">
+        <div class="caja-lateral reveal">
+          <h3>Temas del primer parcial</h3>
+          <a class="actual" href="que-es-una-integral.html">¿Qué es una integral?</a>
+<a class="" href="integrales-definidas.html">Integrales definidas</a>
+<a class="" href="integracion-sustitucion.html">Integración por sustitución</a>
+<a class="" href="integracion-por-partes.html">Integración por partes</a>
+<a class="" href="sustitucion-trigonometrica.html">Sustitución trigonométrica</a>
+<a class="" href="identidades-pitagoricas.html">Sustitución trigonométrica mediante identidades pitagóricas</a>
+        </div>
+        <div class="caja-lateral reveal">
+          <h3>Consejo de estudio</h3>
+          <p>Lee primero el concepto, revisa la fórmula y luego intenta resolver el ejemplo por tu cuenta.</p>
+          <p>Después, usa el video como repaso o complemento.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie-grid">
+    <a class="marca" href="../index.html">
+      <img class="marca-logo" src="../imagenes/logo-facultad-industrial.png" alt="Logo de la Facultad de Ingeniería Industrial">
+      <span style="color:white">Cálculo Integral</span>
+    </a>
+    <small>Proyecto académico · Universidad de Guayaquil · Facultad de Ingeniería Industrial</small>
+  </div>
+</footer>
+<script src="../js/script.js"></script>

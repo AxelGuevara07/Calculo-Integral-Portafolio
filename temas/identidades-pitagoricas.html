@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portafolio académico de Cálculo Integral">
+  <title>Sustitución trigonométrica mediante identidades pitagóricas | Cálculo Integral</title>
+  <link rel="icon" href="../imagenes/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script>
+    window.MathJax = {
+      tex: {inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']]},
+      svg: {fontCache: 'global'}
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+
+<header class="encabezado">
+  <nav class="nav contenedor" aria-label="Navegación principal">
+    <a class="marca" href="../index.html">
+      <img class="marca-logo" src="../imagenes/logo-facultad-industrial.png" alt="Logo de la Facultad de Ingeniería Industrial">
+      <span>Cálculo Integral</span>
+    </a>
+    <button class="menu-movil" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="menu">
+      <li><a data-nav href="../index.html">Inicio</a></li>
+      <li><a data-nav href="../primer-parcial.html">Primer Parcial</a></li>
+      <li><a data-nav href="../segundo-parcial.html">Segundo Parcial</a></li>
+      
+    <li class="desplegable">
+      <button class="desplegable-boton">Temas ▾</button>
+      <div class="desplegable-menu mega-menu">
+        <div class="mega-columna">
+          <span class="mega-titulo">Primer parcial</span>
+          <a href="../temas/que-es-una-integral.html">¿Qué es una integral?</a><a href="../temas/integrales-definidas.html">Integrales definidas</a><a href="../temas/integracion-sustitucion.html">Integración por sustitución</a><a href="../temas/integracion-por-partes.html">Integración por partes</a><a href="../temas/sustitucion-trigonometrica.html">Sustitución trigonométrica</a><a href="../temas/identidades-pitagoricas.html">Sustitución trigonométrica mediante identidades pitagóricas</a>
+        </div>
+        <div class="mega-columna">
+          <span class="mega-titulo">Segundo parcial</span>
+          <a href="../temas/integracion-fracciones-parciales.html">Integración por fracciones parciales</a><a href="../temas/area-bajo-la-curva.html">Área bajo la curva</a><a href="../temas/volumen-solido-revolucion.html">Volumen de sólido de revolución</a><a href="../temas/longitud-de-un-arco.html">Longitud de un arco</a><a href="../temas/cinematica.html">Cinemática</a>
+        </div>
+      </div>
+    </li>
+    
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="pagina-cabecera">
+    <div class="contenedor">
+      <div class="migas">
+        <a href="../index.html">Inicio</a><span>›</span>
+        <a href="../primer-parcial.html">Primer parcial</a>
+        <span>›</span><span>Tema 6</span>
+      </div>
+      <h1>Sustitución trigonométrica mediante identidades pitagóricas</h1>
+      <p>Este método combina la sustitución trigonométrica con las identidades pitagóricas. Después de hacer el cambio de variable, se usan las relaciones trigonométricas y un triángulo rectángulo para regresar a la variable original.</p>
+    </div>
+  </section>
+
+  <section class="contenido-tema">
+    <div class="contenedor layout-tema">
+      <article class="articulo reveal">
+        
+<h2>Identidades fundamentales</h2>
+<div class="formula">\[\sin^2\theta + \cos^2\theta = 1\]</div>
+<div class="formula">\[1 + \tan^2\theta = \sec^2\theta\]</div>
+<div class="formula">\[\sec^2\theta - 1 = \tan^2\theta\]</div>
+
+<h2>Idea del método</h2>
+<p>La identidad pitagórica se utiliza para simplificar la raíz que aparece en la integral. Luego, mediante la sustitución inicial, se construye un triángulo rectángulo para expresar las razones trigonométricas en función de \(x\).</p>
+
+<h2>Ejemplo guiado</h2>
+<div class="ejemplo">
+<strong>Resolver:</strong> \(\int \frac{dx}{\sqrt{x^2+9}}\)
+<p>Como aparece \(x^2+3^2\), hacemos \(x=3\tan\theta\). Entonces \(dx=3\sec^2\theta\,d\theta\).</p>
+<div class="formula">\[\sqrt{x^2+9}=\sqrt{9\tan^2\theta+9}=3\sec\theta\]</div>
+<div class="formula">\[\int \frac{3\sec^2\theta}{3\sec\theta}\,d\theta=\int \sec\theta\,d\theta\]</div>
+<div class="formula">\[=\ln|\sec\theta+\tan\theta|+C\]</div>
+<p>Con el triángulo rectángulo se obtiene:</p>
+<div class="formula">\[\boxed{\ln\left|x+\sqrt{x^2+9}\right|+C}\]</div>
+</div>
+
+<h2>Punto importante</h2>
+<p>El triángulo de referencia es el puente entre la variable trigonométrica y la variable original.</p>
+
+        
+<section class="video-box reveal">
+  <h2>Material adicional</h2>
+  <div class="video-grid">
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/qzG4_jtwcXU" title="Integrales por sustitución trigonométrica | Ej. 5 #julioprofe" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="video-detalles">
+      <span class="video-meta">▶ Video recomendado</span>
+      <h3>Integrales por sustitución trigonométrica | Ej. 5 #julioprofe</h3>
+      <p>Como refuerzo, puedes mirar este video para observar otro ejemplo explicado paso a paso y complementar lo visto en el tema.</p>
+      <a class="boton boton-primario" href="https://www.youtube.com/watch?v=qzG4_jtwcXU" target="_blank" rel="noopener">Ver en YouTube</a>
+    </div>
+  </div>
+</section>
+
+        <div class="navegacion-temas"><a href="sustitucion-trigonometrica.html">← Sustitución trigonométrica</a><a href="../primer-parcial.html">Finalizar parcial ✓</a></div>
+      </article>
+      <aside class="lateral">
+        <div class="caja-lateral reveal">
+          <h3>Temas del primer parcial</h3>
+          <a class="" href="que-es-una-integral.html">¿Qué es una integral?</a>
+<a class="" href="integrales-definidas.html">Integrales definidas</a>
+<a class="" href="integracion-sustitucion.html">Integración por sustitución</a>
+<a class="" href="integracion-por-partes.html">Integración por partes</a>
+<a class="" href="sustitucion-trigonometrica.html">Sustitución trigonométrica</a>
+<a class="actual" href="identidades-pitagoricas.html">Sustitución trigonométrica mediante identidades pitagóricas</a>
+        </div>
+        <div class="caja-lateral reveal">
+          <h3>Consejo de estudio</h3>
+          <p>Lee primero el concepto, revisa la fórmula y luego intenta resolver el ejemplo por tu cuenta.</p>
+          <p>Después, usa el video como repaso o complemento.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie-grid">
+    <a class="marca" href="../index.html">
+      <img class="marca-logo" src="../imagenes/logo-facultad-industrial.png" alt="Logo de la Facultad de Ingeniería Industrial">
+      <span style="color:white">Cálculo Integral</span>
+    </a>
+    <small>Proyecto académico · Universidad de Guayaquil · Facultad de Ingeniería Industrial</small>
+  </div>
+</footer>
+<script src="../js/script.js"></script>
